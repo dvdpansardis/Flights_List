@@ -21,7 +21,7 @@
 	
 	- Next step, build a container, setting the basic informations.
   
-		`docker run -p 5432:5342 --name flightlistdb -e POSTGRES_PASSWORD=postgres -e POSTGRES_USERNAME=postgres -e POSTGRES_DB=flightslist -d postgres`
+		`docker run -p 5432:5432 --name flightlistdb -e POSTGRES_PASSWORD=postgres -e POSTGRES_USERNAME=postgres -e POSTGRES_DB=flightslist -d postgres`
 		
 	- Get the IP of docker-machine, using below command.
 	
