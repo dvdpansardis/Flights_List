@@ -70,4 +70,26 @@ public class FlightController {
 	public Collection<SimpleFlight> filter(@RequestBody FilterRequest filterRequest) {
 		return flightService.filter(filterRequest);
 	}
+	
+	/**
+	 * Get a all cities of departure.
+	 * 
+	 * @return Collection String all cities of departure.
+	 */
+	@RequestMapping(value = "/citysDeparture", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
+	@ResponseBody
+	public Collection<String> getCitysDeparture() {
+		return flightService.getAllCityDeparture();
+	}
+	
+	/**
+	 * Get a all cities of arrived.
+	 * 
+	 * @return Collection String all cities of arrived.
+	 */
+	@RequestMapping(value = "/citysArrived", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
+	@ResponseBody
+	public Collection<String> getCitysArrived() {
+		return flightService.getAllCityArrived();
+	}
 }

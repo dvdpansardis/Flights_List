@@ -127,7 +127,7 @@ public class FlightServiceImpl implements FlightService {
 		FlightFilter flightFilter = new FlightFilter();
 
 		flightFilter.setCodeFlight(filterRequest.getCodeFlight());
-		flightFilter.setStatus(filterRequest.getStatus().isEmpty() ? StatusFlight.NONE
+		flightFilter.setStatus(filterRequest.getStatus() == null ? StatusFlight.NONE
 				: StatusFlight.fromString(filterRequest.getStatus()));
 		flightFilter.setCityDeparture(filterRequest.getCityDeparture());
 		flightFilter.setCityArrived(filterRequest.getCityArrived());
