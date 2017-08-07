@@ -46,6 +46,7 @@
 
 * **Improvements**
 
+	- Documentation of API REST using Swagger (eg. http://editor.swagger.io/?_ga=2.61170789.838520407.1502083076-12703340.1502083076#/).
 	- Create the Class "Passangers".
 	- Create the Class "Airports".
 	- Create the Test on the Controllers.
