@@ -41,7 +41,7 @@ public class FilterRequest {
 	}
 
 	public String getFirstDate() {
-		return this.firstDate.isEmpty() ? "" : this.firstDate;
+		return this.firstDate == null ? "" : this.firstDate;
 	}
 
 	public void setFirstDate(String firstDate) {
@@ -49,7 +49,7 @@ public class FilterRequest {
 	}
 
 	public String getLastDate() {
-		return this.lastDate.isEmpty() ? "" : this.lastDate;
+		return this.lastDate == null ? "" : this.lastDate;
 	}
 
 	public void setLastDate(String lastDate) {
@@ -73,7 +73,7 @@ public class FilterRequest {
 	}
 
 	public String getStatus() {
-		return status;
+		return this.status == null ? "" : this.status;
 	}
 
 	public void setStatus(String status) {
